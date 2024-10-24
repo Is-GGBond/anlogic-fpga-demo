@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HMAC is: 5fe14d986535706c18dfdd78f07bc33e1df33b4bc82260d1554d9bea12b46e3a -->
+<chipwatcher version="3.01" project_name="eth_test" chip_name="PH1A90SBG484">
+	<instance name="u_eth/U_ILA2" id="0" ipgen="true">
+		<clock clk_name="gmii_rx_clk"/>
+		<config bram_name="u_eth/U_ILA2/ChipWatcher_aa8a906c90d0_Inst/wrapper_cwc_top/U_cwc_ram" debughub_name="u_eth/U_ILA2/ChipWatcher_aa8a906c90d0_Inst/wrapper_debughub" input_pipe_num="0" output_pipe_num="0" pwr_on_trigger="disable" sample_depth="4096"/>
+		<signal_vec>
+			<watcher_nodes>
+				<bus name="eth_rx_type[1:0]" radix="bin" op="dont_care">
+					<net name="eth_rx_type[1]" const="false" data="enable" trig="enable" mask="enable" cond="any"/>
+					<net name="eth_rx_type[0]" const="false" data="enable" trig="enable" mask="enable" cond="any"/>
+				</bus>
+				<net name="rx_done" op="equal" const="false" trig="enable" data="enable" mask="enable" cond="any"/>
+			</watcher_nodes>
+		</signal_vec>
+		<trigger name="u_eth/U_ILA2_trigger" position="128">
+			<condition level="1" enabled="yes" type="basic_and"/>
+		</trigger>
+		<logic_eram name="u_eth/U_ILA2/ChipWatcher_aa8a906c90d0_Inst/wrapper_cwc_top/U_cwc_ram" width="3" depth="4096">
+			<phy_eram name="u_eth/U_ILA2/ChipWatcher_aa8a906c90d0_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_syn_12" wid="0X00000224" rid="0X00000224" model_type="AL_PHY_ERAM" width_a="5" width_b="5" debuggable="enable" initialized="enable" width="3" depth="4096" address_offset="0" data_offset="0" address_step="1" num_section="1" section_size="3" width_per_section="3" bytes_in_per_section="1" working_mode_depth="4096" working_mode_width="5" working_mode_ecc="disable" working_mode_num_byte="1" working_mode_super_wide="disable"/>
+		</logic_eram>
+	</instance>
+</chipwatcher>

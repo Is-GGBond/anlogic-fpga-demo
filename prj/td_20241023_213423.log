@@ -1,0 +1,23 @@
+============================================================
+   Tang Dynasty, V6.0.122666
+   Copyright (c) 2012-2024 Anlogic Inc.
+   Executable = D:/UserApp/TD_6.0.2/bin/td.exe
+   Built at =   09:21:25 Jun  5 2024
+   Run by =     Administrator
+   Run Date =   Wed Oct 23 21:34:23 2024
+
+   Run on =     XSZ-20240623MQG
+============================================================
+RUN-001 : GUI based run...
+RUN-1002 : start command "import_device ph1_90.db -package PH1A90SBG484 -basic"
+RUN-1001 : Using default speed grade: 2
+ARC-1001 : Device Initialization.
+ARC-1001 : -----------------------------------------------------------
+ARC-1001 :           OPTION          |        IO        |   SETTING   
+ARC-1001 : -----------------------------------------------------------
+ARC-1001 :   non_jtag_persist(none)  |      36 IOs      |    gpio    
+ARC-1001 :            jtag           |  M7/K7/L6/K6/J6  |  dedicate  
+ARC-1001 : -----------------------------------------------------------
+RUN-1003 : finish command "import_device ph1_90.db -package PH1A90SBG484 -basic" in  6.889386s wall, 1.593750s user + 0.171875s system = 1.765625s CPU (25.6%)
+
+RUN-1004 : used memory is 1400 MB, reserved memory is 1421 MB, peak memory is 1432 MB

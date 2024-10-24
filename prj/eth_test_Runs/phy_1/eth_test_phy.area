@@ -1,0 +1,111 @@
+standard
+***Report Model: eth_top Device: PH1A90SBG484***
+
+Design Statistics
+#IO                        13
+  #input                    7
+  #output                   6
+  #inout                    0
+#lut6                    1743   out of  64320    2.71%
+#reg                     1760
+  #slice reg             1755   out of 128640    1.36%
+  #pad reg                  5
+
+Utilization Statistics
+#slice                   2083   out of  64320    3.24%
+  #used ram                 0
+    #dram lut               0
+    #shifter lut            0
+  #used logic            2083
+    #with luts           1051
+    #with adder           692
+    #reg only             340
+#feedthrough              462
+#f7mux                      0   out of  32160    0.00%
+#f8mux                      0   out of  16080    0.00%
+#dsp                        0   out of    240    0.00%
+#eram                       2   out of    272    0.74%
+  #eram20k                  2
+  #fifo20k                  0
+#pad                       13   out of    260    5.00%
+#pll                        1   out of     12    8.33%
+#pcie                       0   out of      1    0.00%
+#serdes dual                0   out of      2    0.00%
+#ddr_cal                    0   out of      1    0.00%
+#ddr_bank                   0   out of      2    0.00%
+#gclk                       3   out of     32    9.38%
+#lclk                       0   out of     32    0.00%
+#mlclk                      0   out of     16    0.00%
+#ioclk                      0   out of     16    0.00%
+
+Clock Resource Statistics
+Index     ClockNet                                                                   Type            DriverType         Driver                                                ClockFanout
+#1        u_eth/U_ILA2/ChipWatcher_aa8a906c90d0_Inst/wrapper_cwc_top/cwc_trig_clk    InferredGclk    pll                u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc1    5
+#2        cwc_jtck_leading                                                           UserGclk        config             config_inst.cwc_tck_o                                 1
+#3        u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/clk0_buf                               UserGclk        pll                u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc0    1
+
+
+Detailed IO Report
+
+      Name        Direction    Location    IOStandard    IOType    DriveStrength    PullType    PackReg  
+  rgmii_rx_ctl      INPUT        K17        LVCMOS33      HRIO          N/A          PULLUP      DDRX1   
+   rgmii_rxc        INPUT        H20        LVCMOS33      HRIO          N/A          PULLUP      NONE    
+  rgmii_rxd[3]      INPUT        G22        LVCMOS33      HRIO          N/A          PULLUP      DDRX1   
+  rgmii_rxd[2]      INPUT        H22        LVCMOS33      HRIO          N/A          PULLUP      DDRX1   
+  rgmii_rxd[1]      INPUT        E22        LVCMOS33      HRIO          N/A          PULLUP      DDRX1   
+  rgmii_rxd[0]      INPUT        E21        LVCMOS33      HRIO          N/A          PULLUP      DDRX1   
+     rst_n          INPUT         K4         SSTL15       HPIO          N/A          PULLUP      NONE    
+  rgmii_tx_ctl     OUTPUT        G21        LVCMOS33      HRIO           8            NONE       DDRX1   
+   rgmii_txc       OUTPUT        L19        LVCMOS33      HRIO           8            NONE       NONE    
+  rgmii_txd[3]     OUTPUT        J20        LVCMOS33      HRIO           8            NONE       DDRX1   
+  rgmii_txd[2]     OUTPUT        J22        LVCMOS33      HRIO           8            NONE       DDRX1   
+  rgmii_txd[1]     OUTPUT        J21        LVCMOS33      HRIO           8            NONE       DDRX1   
+  rgmii_txd[0]     OUTPUT        F21        LVCMOS33      HRIO           8            NONE       DDRX1   
+
+Report Hierarchy Area:
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                                        |Module                   |logic lut |ripple  |seq     |eram    |dsp     |dram lut |shifter lut |f7mux   |f8mux   |pll     |serdes   |pcie    |ddr     |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|top                                             |eth_top                  |1051      |692     |1760    |2       |0       |0        |0           |0       |0       |1       |0        |0       |0       |
+|  u_eth                                         |eth                      |974       |647     |1332    |2       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    U_ILA2                                      |ILA2                     |120       |63      |217     |1       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|      ChipWatcher_aa8a906c90d0_Inst             |ChipWatcher_aa8a906c90d0 |120       |63      |217     |1       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|        wrapper_cwc_top                         |top_cwc_hub              |120       |63      |217     |1       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|          U_cwc                                 |anlogic01_cwc            |118       |63      |198     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|            U_cwc_bus_top                       |anlogic02_cwc_bus_top    |0         |0       |6       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|              CWC_BUS_DETECTOR[0]$U_cwc_bus_det |anlogic03_cwc_bus_det    |0         |0       |2       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|              CWC_BUS_DETECTOR[1]$U_cwc_bus_det |anlogic03_cwc_bus_det    |0         |0       |4       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|            U_emb_ctrl                          |anlogic04_cwc_emb_ctrl   |34        |32      |50      |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|          U_cwc_ram                             |anlogic05_cwc_ram        |0         |0       |0       |1       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|          pipe_watch                            |anlogic06_pipe           |0         |0       |15      |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    u_crc32_d8_rx                               |crc32_d8                 |20        |0       |32      |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    u_crc32_d8_tx                               |crc32_d8                 |21        |0       |32      |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    u_eth_ctrl                                  |eth_ctrl                 |13        |0       |72      |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    u_eth_rx                                    |eth_rx                   |233       |120     |533     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    u_eth_tx                                    |eth_tx                   |523       |464     |381     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    u_icmp_fifo                                 |Icmp_fifo                |44        |0       |65      |1       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|      ram_inst                                  |ram_infer_Icmp_fifo      |0         |0       |0       |1       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|  u_rgmii_to_gmii                               |rgmii_to_gmii            |0         |0       |0       |0       |0       |0        |0           |0       |0       |1       |0        |0       |0       |
+|    u_rgmii_rx                                  |rgmii_rx                 |0         |0       |0       |0       |0       |0        |0           |0       |0       |1       |0        |0       |0       |
+|      u_rx_pll                                  |rx_pll                   |0         |0       |0       |0       |0       |0        |0           |0       |0       |1       |0        |0       |0       |
+|  debug_hub_top                                 |top_debug_hub            |74        |0       |408     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    U_0_handshake_sync_ctrl                     |                         |8         |0       |103     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|      U_handshake_sync                          |                         |2         |0       |4       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    U_0_handshake_sync_stat                     |                         |4         |0       |61      |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|      U_handshake_sync                          |                         |2         |0       |12      |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    U_0_register                                |                         |52        |0       |180     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    U_jtdo_sel_mux                              |                         |1         |0       |0       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    U_tap                                       |                         |8         |0       |10      |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
+DataNet Average Fanout:
+
+   Index     Fanout    Nets  
+    #1         1       3526  
+    #2         2       547   
+    #3         3       207   
+    #4         4       114   
+    #5        5-10     221   
+    #6       11-50      94   
+  Average     1.88           

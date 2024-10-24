@@ -1,0 +1,56 @@
+Location         : D:\Desktop\anlogic\verimaker\ETHERENT_NEW\prj\eth_test_Runs\syn_1
+Running with     : Tang Dynasty v6.0.122666
+                   Copyright (c) 2012-2024 Anlogic Inc.
+Top Model        : eth_top
+Device           : PH1A90SBG484
+Speed            : 2
+
+Timing Mode      : basic
+Setup            : WNS  1329ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS   475ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+-----------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time(s)  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+-----------------------------------------------------------------------------------------------------
+  import_device  |    1     |     6(37%)     |    1(25%)     |       1329        |       1361        
+  optimize_gate  |    1     |     6(37%)     |    2(50%)     |       1439        |       1443        
+  optimize_rtl   |    1     |     4(25%)     |    1(25%)     |       1428        |       1428        
+    read_adc     |    1     |     0(0%)      |     0(0%)     |       1388        |       1388        
+    read_sdc     |    1     |     0(0%)      |     0(0%)     |       1431        |       1438        
+-----------------------------------------------------------------------------------------------------
+      total      |    5     |       16       |       4       |       1439        |       1443        
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |         1329                |
+|     Setup TNS             |            0                |
+|     Num of violated S-EP  |            0                |
+|     Hold WNS              |          475                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |         1324                |
+|     #luts                 |         1177                |
+|     #lut1                 |           12                |
+|     #lut1(~A)             |           12                |
+|     #slices               |          830                |
+|     slices percentage     |        1.29%                |
+|     #RAMs                 |            2                |
+|     #DSPs                 |            0                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |           42                |
+|     #insts in MACRO       |          830                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        31.06                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     Total                 |            0                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Report gate stage QoR done.
+

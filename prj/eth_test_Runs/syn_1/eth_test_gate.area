@@ -1,0 +1,64 @@
+standard
+***Report Model: eth_top Device: PH1A90SBG484***
+
+IO Statistics
+#IO                        13
+  #input                    7
+  #output                   6
+  #inout                    0
+
+Utilization Statistics
+#lut                     2051
+  #lut1                    12
+  #lut2                   173
+  #lut3                   198
+  #lut4                   150
+  #lut5                   180
+  #lut6                   464
+  #1-bit adder            874
+#reg                     1324   out of 128640    1.03%
+  #dff                   1324
+  #latch                    0
+#f7mux                      0   out of  32160    0.00%
+#f8mux                      0   out of  16080    0.00%
+#dsp                        0   out of    240    0.00%
+#eram                       2   out of    272    0.74%
+  #eram20k                  2
+  #fifo20k                  0
+#pad                       13   out of    260    5.00%
+  #ireg                     0
+  #oreg                     5
+  #treg                     0
+#pll                        1   out of     12    8.33%
+#pcie                       0   out of      1    0.00%
+#serdes dual                0   out of      2    0.00%
+#ddr_cal                    0   out of      1    0.00%
+#ddr_bank                   0   out of      2    0.00%
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                                        |Module                   |logic lut |ripple  |seq     |eram    |dsp     |dram     |shifter |f7mux   |f8mux   |pll     |serdes   |pcie    |ddr     |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|top                                             |eth_top                  |1177      |874     |1329    |2       |0       |0        |0       |0       |0       |1       |0        |0       |0       |
+|  u_eth                                         |eth                      |1176      |824     |1324    |2       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    U_ILA2                                      |ILA2                     |142       |101     |217     |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|      ChipWatcher_aa8a906c90d0_Inst             |ChipWatcher_aa8a906c90d0 |142       |101     |217     |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|        wrapper_cwc_top                         |top_cwc_hub              |142       |101     |217     |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|          U_cwc                                 |anlogic01_cwc            |137       |101     |198     |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|            U_cwc_bus_top                       |anlogic02_cwc_bus_top    |0         |0       |6       |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|              CWC_BUS_DETECTOR[0]$U_cwc_bus_det |anlogic03_cwc_bus_det    |0         |0       |2       |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|              CWC_BUS_DETECTOR[1]$U_cwc_bus_det |anlogic03_cwc_bus_det    |0         |0       |4       |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|            U_emb_ctrl                          |anlogic04_cwc_emb_ctrl   |61        |34      |51      |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|          U_cwc_ram                             |anlogic05_cwc_ram        |1         |0       |0       |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|          pipe_watch                            |anlogic06_pipe           |0         |0       |15      |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_crc32_d8_rx                               |crc32_d8                 |41        |0       |32      |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_crc32_d8_tx                               |crc32_d8                 |41        |0       |32      |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_eth_ctrl                                  |eth_ctrl                 |16        |0       |72      |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_eth_rx                                    |eth_rx                   |204       |130     |532     |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_eth_tx                                    |eth_tx                   |660       |593     |374     |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_icmp_fifo                                 |Icmp_fifo                |72        |0       |65      |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|      ram_inst                                  |ram_infer_Icmp_fifo      |0         |0       |0       |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|  u_rgmii_to_gmii                               |rgmii_to_gmii            |0         |0       |0       |0       |0       |0        |0       |0       |0       |1       |0        |0       |0       |
+|    u_rgmii_rx                                  |rgmii_rx                 |0         |0       |0       |0       |0       |0        |0       |0       |0       |1       |0        |0       |0       |
+|      u_rx_pll                                  |rx_pll                   |0         |0       |0       |0       |0       |0        |0       |0       |0       |1       |0        |0       |0       |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

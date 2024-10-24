@@ -1,0 +1,55 @@
+standard
+***Report Model: top_debug_hub Device: PH1A90SBG484***
+
+Design Statistics
+#IO                        90
+  #input                   34
+  #output                  56
+  #inout                    0
+#lut                      100
+  #lut1                     6
+  #lut2                    29
+  #lut3                    28
+  #lut4                    10
+  #lut5                     8
+  #lut6                    19
+  #1-bit adder              0
+#reg                      402
+  #slice reg              402   out of 128640    0.31%
+  #pad reg                  0
+
+Utilization Statistics
+#slice                      0   out of  64320    0.00%
+  #used ram                 0
+    #dram lut               0
+    #shifter lut            0
+  #used logic               0
+    #with luts              0
+    #with adder             0
+    #reg only               0
+#f7mux                      0   out of  32160    0.00%
+#f8mux                      0   out of  16080    0.00%
+#dsp                        0   out of    240    0.00%
+#eram                       0   out of    272    0.00%
+  #eram20k                  0
+  #fifo20k                  0
+#pad                        0   out of    260    0.00%
+#pll                        0   out of     12    0.00%
+#pcie                       0   out of      1    0.00%
+#serdes dual                0   out of      2    0.00%
+#ddr_cal                    0   out of      1    0.00%
+#ddr_bank                   0   out of      2    0.00%
+
+Report Hierarchy Area:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                  |Module                        |logic lut |ripple  |seq     |eram    |dsp     |dram lut |shifter lut |f7mux   |f8mux   |pll     |serdes   |pcie    |ddr     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|top                       |top_debug_hub                 |100       |0       |402     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|  U_0_handshake_sync_ctrl |anlogic04_handshake_sync_ctrl |2         |0       |110     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    U_handshake_sync      |anlogic03_handshake_sync      |2         |0       |9       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|  U_0_handshake_sync_stat |anlogic05_handshake_sync_stat |3         |0       |58      |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    U_handshake_sync      |anlogic03_handshake_sync      |3         |0       |9       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|  U_0_register            |anlogic02_register            |85        |0       |179     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|  U_jtdo_sel_mux          |anlogic06_jtdo_sel_mux        |2         |0       |0       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|  U_tap                   |anlogic01_tap                 |7         |0       |3       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

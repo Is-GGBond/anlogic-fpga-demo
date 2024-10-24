@@ -1,0 +1,82 @@
+============================================================
+   Tang Dynasty, V6.0.122666
+   Copyright (c) 2012-2024 Anlogic Inc.
+   Executable = D:/UserApp/TD_6.0.2/bin/td.exe
+   Built at =   09:21:25 Jun  5 2024
+   Run by =     Administrator
+   Run Date =   Wed Oct 23 21:12:34 2024
+
+   Run on =     XSZ-20240623MQG
+============================================================
+HDL-5007 WARNING: could not find top-level module/unit; aborting hierarchy tree creation
+HDL-8007 ERROR: cannot find port 'I' on this module in ../eth_src/rgmii_rx.v(28)
+HDL-8007 ERROR: cannot find port 'O' on this module in ../eth_src/rgmii_rx.v(29)
+HDL-8007 ERROR: cannot find port 'I' on this module in ../eth_src/rgmii_rx.v(34)
+HDL-8007 ERROR: cannot find port 'O' on this module in ../eth_src/rgmii_rx.v(35)
+HDL-8007 ERROR: cannot find port 'I' on this module in ../eth_src/rgmii_rx.v(28)
+HDL-8007 ERROR: cannot find port 'O' on this module in ../eth_src/rgmii_rx.v(29)
+HDL-8007 ERROR: cannot find port 'I' on this module in ../eth_src/rgmii_rx.v(34)
+HDL-8007 ERROR: cannot find port 'O' on this module in ../eth_src/rgmii_rx.v(35)
+HDL-8007 ERROR: cannot find port 'I' on this module in ../eth_src/rgmii_rx.v(34)
+HDL-8007 ERROR: cannot find port 'O' on this module in ../eth_src/rgmii_rx.v(35)
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-8007 ERROR: syntax error near '.' in ../eth_src/eth.v(213)
+HDL-8007 ERROR: syntax error near '.' in ../eth_src/eth.v(214)
+HDL-8007 ERROR: port 'rrst' is not defined in ../eth_src/eth.v(221)
+HDL-8007 ERROR: port declaration not allowed in 'eth' with formal port declaration list in ../eth_src/eth.v(221)
+HDL-8007 ERROR: port 'di' is not defined in ../eth_src/eth.v(222)
+HDL-8007 ERROR: port declaration not allowed in 'eth' with formal port declaration list in ../eth_src/eth.v(222)
+HDL-8007 ERROR: port 'clk' is not defined in ../eth_src/eth.v(223)
+HDL-8007 ERROR: port declaration not allowed in 'eth' with formal port declaration list in ../eth_src/eth.v(223)
+HDL-8007 ERROR: port 'we' is not defined in ../eth_src/eth.v(224)
+HDL-8007 ERROR: port declaration not allowed in 'eth' with formal port declaration list in ../eth_src/eth.v(224)
+HDL-8007 ERROR: port 're' is not defined in ../eth_src/eth.v(225)
+HDL-8007 ERROR: port declaration not allowed in 'eth' with formal port declaration list in ../eth_src/eth.v(225)
+HDL-8007 ERROR: port 'dout' is not defined in ../eth_src/eth.v(226)
+HDL-8007 ERROR: port declaration not allowed in 'eth' with formal port declaration list in ../eth_src/eth.v(226)
+HDL-8007 ERROR: port 'empty_flag' is not defined in ../eth_src/eth.v(227)
+HDL-8007 ERROR: port declaration not allowed in 'eth' with formal port declaration list in ../eth_src/eth.v(227)
+HDL-8007 ERROR: port 'full_flag' is not defined in ../eth_src/eth.v(228)
+HDL-8007 ERROR: port declaration not allowed in 'eth' with formal port declaration list in ../eth_src/eth.v(228)
+HDL-8007 ERROR: ignore module module due to previous errors in ../eth_src/eth.v(1)
+GUI-6001 WARNING: File D:/Desktop/anlogic/verimaker/ETHERENT_NEW/prj/al_ip/FIFO/Comp_inst.v does not exist!
+HDL-8007 ERROR: cannot find port 'wrst' on this module in ../eth_src/eth.v(205)
+HDL-8007 ERROR: cannot find port 'rrst' on this module in ../eth_src/eth.v(206)
+HDL-8007 ERROR: syntax error near 'parameter' in ../eth_src/eth.v(216)
+HDL-8007 ERROR: Verilog 2000 keyword 'parameter' used in incorrect context in ../eth_src/eth.v(216)
+HDL-8007 ERROR: syntax error near 'input' in ../eth_src/eth.v(227)
+HDL-8007 ERROR: Verilog 2000 keyword 'input' used in incorrect context in ../eth_src/eth.v(227)
+HDL-8007 ERROR: 'u_icmp_fifo' is already declared in ../eth_src/eth.v(225)
+HDL-8007 ERROR: ignore module module due to previous errors in ../eth_src/eth.v(1)
+RUN-6001 WARNING: Failed to reset syn_1: some files can't be removed in D:/Desktop/anlogic/verimaker/ETHERENT_NEW/prj/eth_test_Runs/syn_1
+RUN-6001 WARNING: syn_1: run failed.
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-8007 ERROR: cannot find port 'dly' on this module in ../eth_src/rgmii_rx.v(49)
+GUI-6001 WARNING: File D:/Desktop/anlogic/verimaker/ETHERENT_NEW/prj/eth_test_Runs/phy_1/eth_test.bit does not exist!
+GUI-6001 WARNING: File D:/Desktop/anlogic/verimaker/ETHERENT_NEW/prj/eth_test_Runs/phy_1/eth_test.bit does not exist!
+TMR-6524 WARNING: Fails to find any valid -from targets, for constraint(s):  set_max_delay -from [ get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_aclk[*]} ] -to [ get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_bclk[*]} ] -datapath_only  1.
+TMR-6524 WARNING: Fails to find any valid -from targets, for constraint(s):  set_false_path -hold -from [ get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_aclk[*]} ] -to [ get_regs {debug_hub_top/U_*_handshake_sync_ctrl/bus_data_r_bclk[*]} ].
+TMR-6524 WARNING: Fails to find any valid -from targets, for constraint(s):  set_max_delay -from [ get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_bclk[*]} ] -to [ get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_aclk[*]} ] -datapath_only  1.
+TMR-6524 WARNING: Fails to find any valid -from targets, for constraint(s):  set_false_path -hold -from [ get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_bclk[*]} ] -to [ get_regs {debug_hub_top/U_*_handshake_sync_stat/bus_data_r_aclk[*]} ].
+TMR-6524 WARNING: Fails to find any valid -to targets, for constraint(s):  set_max_delay -from [ get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_aclk*} ] -to [ get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_sync1_bclk*} ] -datapath_only  1.
+TMR-6524 WARNING: Fails to find any valid -to targets, for constraint(s):  set_false_path -hold -from [ get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_aclk*} ] -to [ get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/req_sync1_bclk*} ].
+TMR-6524 WARNING: Fails to find any valid -from targets, for constraint(s):  set_max_delay -from [ get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_bclk*} ] -to [ get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_sync1_aclk*} ] -datapath_only  1.
+TMR-6524 WARNING: Fails to find any valid -from targets, for constraint(s):  set_false_path -hold -from [ get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_bclk*} ] -to [ get_regs {debug_hub_top/U_*_handshake_sync_*/U_handshake_sync/ack_sync1_aclk*} ].
+TMR-6524 WARNING: Fails to find any valid -to targets, for constraint(s):  set_max_delay -from [ get_regs {debug_hub_top/U_tap/rst*} ] -to [ get_regs {debug_hub_top/slave_*_rst_sync*} ] -datapath_only  1.
+TMR-6524 WARNING: Fails to find any valid -to targets, for constraint(s):  set_false_path -hold -from [ get_regs {debug_hub_top/U_tap/rst*} ] -to [ get_regs {debug_hub_top/slave_*_rst_sync*} ].
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)

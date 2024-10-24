@@ -1,0 +1,254 @@
+============================================================
+   Tang Dynasty, V6.0.122666
+   Copyright (c) 2012-2024 Anlogic Inc.
+   Executable = D:/UserApp/TD_6.0.2/bin/td.exe
+   Built at =   09:21:25 Jun  5 2024
+   Run by =     Administrator
+   Run Date =   Thu Oct 24 22:12:47 2024
+
+   Run on =     XSZ-20240623MQG
+============================================================
+RUN-1002 : start command "import_device ph1_90.db -package PH1A90SBG484"
+RUN-1001 : Using default speed grade: 2
+ARC-1001 : Device Initialization.
+ARC-1001 : -----------------------------------------------------------
+ARC-1001 :           OPTION          |        IO        |   SETTING   
+ARC-1001 : -----------------------------------------------------------
+ARC-1001 :   non_jtag_persist(none)  |      36 IOs      |    gpio    
+ARC-1001 :            jtag           |  M7/K7/L6/K6/J6  |  dedicate  
+ARC-1001 : -----------------------------------------------------------
+RUN-1003 : finish command "import_device ph1_90.db -package PH1A90SBG484" in  7.984346s wall, 4.937500s user + 0.156250s system = 5.093750s CPU (63.8%)
+
+RUN-1004 : used memory is 1319 MB, reserved memory is 1365 MB, peak memory is 1350 MB
+RUN-1002 : start command "set_param flow ooc_flow on"
+RUN-1002 : start command "read_verilog -file D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_debughub.sv -global_include debug_hub_define.v -top top_debug_hub"
+HDL-1007 : analyze verilog file debug_hub_define.v
+HDL-1007 : analyze verilog file D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_debughub.sv
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-1007 : back to file 'D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_debughub.sv' in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_debughub.sv(5139)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_debughub.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_debughub.sv(0)
+HDL-1007 : elaborate module AL_MAP_LUT1(INIT=2'b01,EQN="(~A)") in D:/UserApp/TD_6.0.2/arch/al_lmacro.v(60)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_debughub.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_debughub.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_debughub.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_debughub.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_debughub.sv(0)
+HDL-1200 : Current top model is top_debug_hub
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file D:/UserApp/TD_6.0.2/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "top_debug_hub"
+SYN-1012 : SanityCheck: Model "anlogic04_handshake_sync_ctrl(BUS_WIDTH=50)"
+SYN-1012 : SanityCheck: Model "anlogic03_handshake_sync"
+SYN-1012 : SanityCheck: Model "anlogic05_handshake_sync_stat(BUS_WIDTH=24)"
+SYN-1012 : SanityCheck: Model "anlogic02_register(CTRL_REG_LEN=50,STAT_REG_LEN=24,SEL_VAL=0)"
+SYN-1012 : SanityCheck: Model "anlogic06_jtdo_sel_mux"
+SYN-1012 : SanityCheck: Model "anlogic01_tap"
+SYN-1011 : Flatten model top_debug_hub
+SYN-1032 : 974/5 useful/useless nets, 173/4 useful/useless insts
+SYN-1016 : Merged 12 instances.
+SYN-1032 : 962/4 useful/useless nets, 163/2 useful/useless insts
+SYN-1016 : Merged 410 instances.
+SYN-1019 : Optimized 371 mux instances.
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model top_debug_hub.
+TMR-2506 : Timing graph: tpin num: 2779, tnet num: 994, tinst num: 586, tnode num: 3964, tedge num: 3724.
+TMR-2508 : Levelizing timing graph completed, there are 37 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1002 : start command "update_timing -mode BASIC"
+RUN-1002 : start command "start_timer"
+TMR-2505 : Start building timing graph for model top_debug_hub.
+TMR-2506 : Timing graph: tpin num: 2779, tnet num: 994, tinst num: 586, tnode num: 3964, tedge num: 3724.
+TMR-2508 : Levelizing timing graph completed, there are 37 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2504 : Update delay of 994 nets completely.
+TMR-2502 : Annotated delay with mode Synthesized.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 408 clock pins, and constraint 1185 relative nodes.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-1014 : Optimize round 1
+SYN-1032 : 606/371 useful/useless nets, 569/0 useful/useless insts
+SYN-1015 : Optimize round 1, 27 better
+SYN-1014 : Optimize round 2
+SYN-1015 : Optimize round 2, 0 better
+SYN-1032 : 595/10 useful/useless nets, 560/2 useful/useless insts
+SYN-3010 : Optimized 6 DFF(s)
+SYN-1032 : 593/2 useful/useless nets, 558/2 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 10 better
+SYN-1014 : Optimize round 2
+SYN-1015 : Optimize round 2, 0 better
+RUN-1002 : start command "map_macro"
+RUN-1002 : start command "update_pll_param -module top_debug_hub"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-1001 : Throwback 31 control mux instances
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 2 instances.
+SYN-2501 : Optimize round 1, 42 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-1032 : 645/10 useful/useless nets, 610/10 useful/useless insts
+SYN-2501 : Optimize round 1
+SYN-2501 : Optimize round 1, 0 better
+SYN-2501 : Map 2 macro adder(s)
+SYN-1016 : Merged 8 instances.
+SYN-1032 : 651/4 useful/useless nets, 616/0 useful/useless insts
+RUN-1002 : start command "map"
+SYN-2581 : Mapping with K=6, #lut = 94 (3.57), #lev = 2 (1.53), #crit_level = 0
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=6, #lut = 94 (3.57), #lev = 2 (1.53), #crit_level = 0
+SYN-3001 : Logic optimization opt = 0.02 sec, map = 0.00 sec, post map opt = 0.02 sec.
+SYN-3001 : Mapper mapped 194 instances into 94 LUTs, name keeping = 89%.
+RUN-1002 : start command "pack"
+SYN-1001 : Packing model "top_debug_hub" ...
+SYN-4010 : Pack lib has 87 rtl pack models with 58 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 402 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 0 carry chain into lslice
+SYN-4012 : Packed 0 FxMUX
+RUN-1002 : start command "report_qor -step gate -file gate.qor"
+RUN-1002 : start command "start_timer"
+USR-1006 : Autogen constraints ...
+TMR-2505 : Start building timing graph for model top_debug_hub.
+TMR-2506 : Timing graph: tpin num: 2499, tnet num: 547, tinst num: 514, tnode num: 4041, tedge num: 3848.
+TMR-2508 : Levelizing timing graph completed, there are 38 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 402 clock pins, and constraint 1542 relative nodes.
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |         7447                |
+|     Setup TNS             |            0                |
+|     Num of violated S-EP  |            0                |
+|     Hold WNS              |          523                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |          402                |
+|     #luts                 |          100                |
+|     #lut1                 |            6                |
+|     #lut1(~A)             |            0                |
+|     #slices               |            0                |
+|     slices percentage     |        0.00%                |
+|     #RAMs                 |            0                |
+|     #DSPs                 |            0                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |            0                |
+|     #insts in MACRO       |            0                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        16.40                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     Total                 |            0                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Logic Level Distribution
+------------------------------------------------------------
+  Clock        |  Period            |  0    |  1    |  2
+------------------------------------------------------------
+  DeriveClock  |  20.000ns (50MHz)  |  749  |  220  |  124
+------------------------------------------------------------
+Note: The table count the worst 100000 paths, each endpoint count only one time.(1093 paths analyzed)
+
+Hierarchical Rent Exponent Report
++--------------------------------------------------------+
+|Inst     |Model  |Rent     |Cell     |Pin     |Term     |
++--------------------------------------------------------+
++--------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+
+RUN-1002 : start command "report_area -file top_debug_hub_gate.area"
+SYN-4034 : The count of slices with lut is 0.
+SYN-4035 : The count of slices with lut+ripple is 0.
+RUN-1001 : standard
+***Report Model: top_debug_hub Device: PH1A90SBG484***
+
+Design Statistics
+#IO                        90
+  #input                   34
+  #output                  56
+  #inout                    0
+#lut                      100
+  #lut1                     6
+  #lut2                    29
+  #lut3                    28
+  #lut4                    10
+  #lut5                     8
+  #lut6                    19
+  #1-bit adder              0
+#reg                      402
+  #slice reg              402   out of 128640    0.31%
+  #pad reg                  0
+
+Utilization Statistics
+#slice                      0   out of  64320    0.00%
+  #used ram                 0
+    #dram lut               0
+    #shifter lut            0
+  #used logic               0
+    #with luts              0
+    #with adder             0
+    #reg only               0
+#f7mux                      0   out of  32160    0.00%
+#f8mux                      0   out of  16080    0.00%
+#dsp                        0   out of    240    0.00%
+#eram                       0   out of    272    0.00%
+  #eram20k                  0
+  #fifo20k                  0
+#pad                        0   out of    260    0.00%
+#pll                        0   out of     12    0.00%
+#pcie                       0   out of      1    0.00%
+#serdes dual                0   out of      2    0.00%
+#ddr_cal                    0   out of      1    0.00%
+#ddr_bank                   0   out of      2    0.00%
+
+Report Hierarchy Area:
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                  |Module                        |logic lut |ripple  |seq     |eram    |dsp     |dram lut |shifter lut |f7mux   |f8mux   |pll     |serdes   |pcie    |ddr     |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|top                       |top_debug_hub                 |100       |0       |402     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|  U_0_handshake_sync_ctrl |anlogic04_handshake_sync_ctrl |2         |0       |110     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    U_handshake_sync      |anlogic03_handshake_sync      |2         |0       |9       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|  U_0_handshake_sync_stat |anlogic05_handshake_sync_stat |3         |0       |58      |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|    U_handshake_sync      |anlogic03_handshake_sync      |3         |0       |9       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|  U_0_register            |anlogic02_register            |85        |0       |179     |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|  U_jtdo_sel_mux          |anlogic06_jtdo_sel_mux        |2         |0       |0       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
+|  U_tap                   |anlogic01_tap                 |7         |0       |3       |0       |0       |0        |0           |0       |0       |0       |0        |0       |0       |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+RUN-1002 : start command "export_db -mode ooc top_debug_hub_ooc.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models

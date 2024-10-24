@@ -1,0 +1,57 @@
+standard
+***Report Model: eth_top Device: PH1A90SBG484***
+
+IO Statistics
+#IO                        13
+  #input                    7
+  #output                   6
+  #inout                    0
+
+Gate Statistics
+#Basic gates             2457
+  #and                    161
+  #nand                     0
+  #or                     174
+  #nor                      0
+  #xor                    431
+  #xnor                     0
+  #buf                      0
+  #not                    266
+  #bufif1                   0
+  #MX21                    90
+  #FADD                     0
+  #DFF                   1335
+  #LATCH                    0
+#MACRO_ADD                 69
+#MACRO_EQ                  76
+#MACRO_MUX                833
+#MACRO_OTHERS              11
+
+Report Hierarchy Area:
++--------------------------------------------------------------------------------------------------+
+|Instance                                        |Module                   |gates  |seq    |macros |
++--------------------------------------------------------------------------------------------------+
+|top                                             |eth_top                  |1122   |1335   |156    |
+|  u_eth                                         |eth                      |1115   |1335   |145    |
+|    U_ILA2                                      |ILA2                     |56     |220    |22     |
+|      ChipWatcher_aa8a906c90d0_Inst             |ChipWatcher_aa8a906c90d0 |56     |220    |22     |
+|        wrapper_cwc_top                         |top_cwc_hub              |56     |220    |22     |
+|          U_cwc                                 |anlogic01_cwc            |54     |198    |20     |
+|            U_cwc_bus_top                       |anlogic02_cwc_bus_top    |41     |6      |4      |
+|              CWC_BUS_DETECTOR[0]$U_cwc_bus_det |anlogic03_cwc_bus_det    |17     |2      |0      |
+|              CWC_BUS_DETECTOR[1]$U_cwc_bus_det |anlogic03_cwc_bus_det    |24     |4      |4      |
+|            U_emb_ctrl                          |anlogic04_cwc_emb_ctrl   |7      |51     |5      |
+|          U_cwc_ram                             |anlogic05_cwc_ram        |1      |3      |0      |
+|          pipe_watch                            |anlogic06_pipe           |0      |15     |0      |
+|    u_crc32_d8_rx                               |crc32_d8                 |247    |32     |0      |
+|    u_crc32_d8_tx                               |crc32_d8                 |247    |32     |0      |
+|    u_eth_ctrl                                  |eth_ctrl                 |20     |72     |7      |
+|    u_eth_rx                                    |eth_rx                   |122    |532    |45     |
+|    u_eth_tx                                    |eth_tx                   |408    |374    |62     |
+|    u_icmp_fifo                                 |Icmp_fifo                |14     |73     |9      |
+|      ram_inst                                  |ram_infer_Icmp_fifo      |0      |8      |0      |
+|  u_rgmii_to_gmii                               |rgmii_to_gmii            |2      |0      |11     |
+|    u_rgmii_rx                                  |rgmii_rx                 |2      |0      |6      |
+|      u_rx_pll                                  |rx_pll                   |0      |0      |1      |
+|    u_rgmii_tx                                  |rgmii_tx                 |0      |0      |5      |
++--------------------------------------------------------------------------------------------------+

@@ -1,0 +1,16 @@
+============================================================
+   Tang Dynasty, V6.0.122666
+   Copyright (c) 2012-2024 Anlogic Inc.
+   Executable = D:/UserApp/TD_6.0.2/bin/td.exe
+   Built at =   09:21:25 Jun  5 2024
+   Run by =     Administrator
+   Run Date =   Thu Oct 24 22:12:40 2024
+
+   Run on =     XSZ-20240623MQG
+============================================================
+PHY-7019 WARNING: Model pin rgmii_rxc connect to a non-clock-capable pad h20, will suffer from clock performance degradation.
+RUN-6004 WARNING: There are 3 nets with only 1 pin.
+PHY-5016 WARNING: PLL refclk is not driving by a clock-capable IO.
+RUN-6004 WARNING: There are 3 nets with only 1 pin.
+RUN-6004 WARNING: There are 3 nets with only 1 pin.
+PHY-5019 WARNING: Clock net rgmii_rxc_dup_1 is not driven by clock-capable pad rgmii_rxc_syn_2(H20), will suffer from clock performance degradation.

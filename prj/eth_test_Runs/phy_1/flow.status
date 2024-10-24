@@ -1,0 +1,76 @@
+Location         : D:\Desktop\anlogic\verimaker\ETHERENT_NEW\prj\eth_test_Runs\phy_1
+Running with     : Tang Dynasty v6.0.122666
+                   Copyright (c) 2012-2024 Anlogic Inc.
+Top Model        : eth_top
+Device           : PH1A90SBG484
+Speed            : 2
+
+Timing Mode      : final
+Setup            : WNS    35ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS     3ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+-----------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time(s)  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+-----------------------------------------------------------------------------------------------------
+      place      |    1     |    29(40%)     |    21(16%)    |       1703        |       1703        
+      route      |    1     |    28(39%)     |    63(50%)    |       2822        |       3036        
+     bitgen      |    1     |     8(11%)     |    41(32%)    |       2820        |       3036        
+  import_device  |    1     |     6(8%)      |     1(0%)     |       1329        |       1361        
+    import_db    |    2     |     0(0%)      |     0(0%)     |       1389        |       1411        
+      pack       |    1     |     0(0%)      |     0(0%)     |       1389        |       1411        
+    read_sdc     |    1     |     0(0%)      |     0(0%)     |       1388        |       1411        
+-----------------------------------------------------------------------------------------------------
+      total      |    8     |       71       |      126      |       2822        |       3036        
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |          293                |
+|     Setup TNS             |            0                |
+|     Num of violated S-EP  |            0                |
+|     FMAX                  |    10.029MHz                |
+|     WNS path clock period |     100000ps                |
+|     Hold WNS              |          -55                |
+|     Hold TNS              |         -110                |
+|     Num of violated H-EP  |            2                |
+-----------------------------------------------------------
+| Wire length               |       241069                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #slices               |         2083                |
+|     slices percentage     |        3.24%                |
+|     #RAMs                 |            2                |
+|     #DSPs                 |            0                |
+|     #DRAMHARDCON          |            0                |
+-----------------------------------------------------------
+| Congestion                |                             |
+|     Top 1% tile util      |           33                |
+|     Top 1% tile avg util  |       40.63%                |
+|     Over 100% util #tile  |            0                |
+-----------------------------------------------------------
+Report place stage QoR done.
+
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |           35                |
+|     Setup TNS             |            0                |
+|     Num of violated S-EP  |            0                |
+|     Hold WNS              |            3                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Wire length               |       503920                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #slices               |         2083                |
+|     slices percentage     |        3.24%                |
+|     #RAMs                 |            2                |
+|     #DSPs                 |            0                |
+|     #DRAMHARDCON          |            0                |
+-----------------------------------------------------------
+Report route stage QoR done.
+

@@ -1,0 +1,768 @@
+============================================================
+   Tang Dynasty, V6.0.122666
+   Copyright (c) 2012-2024 Anlogic Inc.
+   Executable = D:/UserApp/TD_6.0.2/bin/td.exe
+   Built at =   09:21:25 Jun  5 2024
+   Run by =     Administrator
+   Run Date =   Thu Oct 24 22:12:20 2024
+
+   Run on =     XSZ-20240623MQG
+============================================================
+RUN-1002 : start command "import_device ph1_90.db -package PH1A90SBG484 -speed 2"
+ARC-1001 : Device Initialization.
+ARC-1001 : -----------------------------------------------------------
+ARC-1001 :           OPTION          |        IO        |   SETTING   
+ARC-1001 : -----------------------------------------------------------
+ARC-1001 :   non_jtag_persist(none)  |      36 IOs      |    gpio    
+ARC-1001 :            jtag           |  M7/K7/L6/K6/J6  |  dedicate  
+ARC-1001 : -----------------------------------------------------------
+RUN-1003 : finish command "import_device ph1_90.db -package PH1A90SBG484 -speed 2" in  6.777060s wall, 1.656250s user + 0.109375s system = 1.765625s CPU (26.1%)
+
+RUN-1004 : used memory is 1329 MB, reserved memory is 1365 MB, peak memory is 1361 MB
+RUN-1002 : start command "open_project eth_test.prj"
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 :     Parameters    |   Settings   |  Default Values  |  Note  
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 :    enable_seed    |     off      |       off        |        
+RUN-1001 :    hfn_to_clock   |  1000000000  |    1000000000    |        
+RUN-1001 :      message      |   standard   |     standard     |        
+RUN-1001 :    qor_monitor    |      on      |        on        |        
+RUN-1001 :   speedup_effort  |      0       |        0         |        
+RUN-1001 :    syn_ip_flow    |     off      |       off        |        
+RUN-1001 :       thread      |     auto     |       auto       |        
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file ../../al_ip/SOFT_FIFO/Comp_inst.v
+HDL-1007 : analyze verilog file ../../al_ip/ILA2/ChipWatcher_aa8a906c90d0.sv
+HDL-1007 : analyze verilog file ../../al_ip/ILA2/ILA2.sv
+HDL-1007 : analyze verilog file ../../al_ip/pll/rx_pll.v
+HDL-1007 : undeclared symbol 'rx_pll_open0', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(82)
+HDL-1007 : undeclared symbol 'rx_pll_open1', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(90)
+HDL-1007 : undeclared symbol 'rx_pll_open2', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(99)
+HDL-1007 : undeclared symbol 'rx_pll_open3', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(100)
+HDL-1007 : undeclared symbol 'rx_pll_open11', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(101)
+HDL-1007 : undeclared symbol 'rx_pll_open10', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(101)
+HDL-1007 : undeclared symbol 'rx_pll_open9', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(101)
+HDL-1007 : undeclared symbol 'rx_pll_open8', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(101)
+HDL-1007 : undeclared symbol 'rx_pll_open7', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(101)
+HDL-1007 : undeclared symbol 'rx_pll_open6', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(101)
+HDL-1007 : undeclared symbol 'rx_pll_open5', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(101)
+HDL-1007 : undeclared symbol 'rx_pll_open4', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(101)
+HDL-1007 : undeclared symbol 'rx_pll_open24', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(103)
+HDL-1007 : undeclared symbol 'rx_pll_open22', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(103)
+HDL-1007 : undeclared symbol 'rx_pll_open20', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(103)
+HDL-1007 : undeclared symbol 'rx_pll_open18', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(103)
+HDL-1007 : undeclared symbol 'rx_pll_open16', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(103)
+HDL-1007 : undeclared symbol 'rx_pll_open14', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(103)
+HDL-1007 : undeclared symbol 'rx_pll_open25', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(104)
+HDL-1007 : undeclared symbol 'rx_pll_open23', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(104)
+HDL-1007 : undeclared symbol 'rx_pll_open21', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(104)
+HDL-1007 : undeclared symbol 'rx_pll_open19', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(104)
+HDL-1007 : undeclared symbol 'rx_pll_open17', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(104)
+HDL-1007 : undeclared symbol 'rx_pll_open15', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(104)
+HDL-1007 : undeclared symbol 'rx_pll_open13', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(104)
+HDL-1007 : undeclared symbol 'rx_pll_open12', assumed default net type 'wire' in ../../al_ip/pll/rx_pll.v(104)
+HDL-1007 : analyze verilog file ../../../eth_src/crc32_d8.v
+HDL-1007 : analyze verilog file ../../../eth_src/eth.tx.v
+HDL-1007 : analyze verilog file ../../../eth_src/eth.v
+HDL-1007 : analyze verilog file ../../../eth_src/eth_ctrl.v
+HDL-1007 : analyze verilog file ../../../eth_src/eth_rx.v
+HDL-1007 : analyze verilog file ../../../eth_src/rgmii_rx.v
+HDL-1007 : undeclared symbol 'rgmii_rxc_int', assumed default net type 'wire' in ../../../eth_src/rgmii_rx.v(27)
+HDL-1007 : analyze verilog file ../../../eth_src/rgmii_to_gmii.v
+HDL-1007 : analyze verilog file ../../../eth_src/rgmii_tx.v
+HDL-1007 : undeclared symbol 'tx_reset', assumed default net type 'wire' in ../../../eth_src/rgmii_tx.v(14)
+HDL-1007 : analyze verilog file ../../../eth_src/eth_top.v
+RUN-1001 : Project manager successfully analyzed 13 source files.
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 :     Parameters    |   Settings   |  Default Values  |  Note  
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 :    enable_seed    |     off      |       off        |        
+RUN-1001 :    hfn_to_clock   |  1000000000  |    1000000000    |        
+RUN-1001 :      message      |   standard   |     standard     |        
+RUN-1001 :    qor_monitor    |      on      |        on        |        
+RUN-1001 :   speedup_effort  |      0       |        0         |        
+RUN-1001 :    syn_ip_flow    |     off      |       off        |        
+RUN-1001 :       thread      |     auto     |       auto       |        
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+RUN-1002 : start command "elaborate -top eth_top"
+HDL-1007 : analyze verilog file D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-1007 : back to file 'D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv' in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(537)
+HDL-1007 : elaborate module eth_top in ../../../eth_src/eth_top.v(14)
+HDL-1007 : elaborate module rgmii_to_gmii in ../../../eth_src/rgmii_to_gmii.v(1)
+HDL-1007 : elaborate module rgmii_rx in ../../../eth_src/rgmii_rx.v(1)
+HDL-1007 : elaborate module rx_pll in ../../al_ip/pll/rx_pll.v(23)
+HDL-1007 : elaborate module PH1_LOGIC_BUFG in D:/UserApp/TD_6.0.2/arch/ph1_macro.v(10602)
+HDL-1007 : elaborate module PH1_PHY_PLL(REFCLK_DIV=5,FBCLK_DIV=4,CLKC0_CPHASE=9,CLKC1_CPHASE=5,CLKC0_DIV=10,CLKC1_DIV=8,CLKC0_DUTY_INT=5,CLKC1_DUTY_INT=4,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FIN="125.000000",PLL_FEED_TYPE="EXTERNAL",LPF_RES=3,ICP_CUR=11,GMC_GAIN=1,SSC_RNGE=0) in D:/UserApp/TD_6.0.2/arch/ph1_macro.v(609)
+HDL-1007 : elaborate module PH1_LOGIC_IDDR in D:/UserApp/TD_6.0.2/arch/ph1_macro.v(10690)
+HDL-1007 : elaborate module rgmii_tx in ../../../eth_src/rgmii_tx.v(1)
+HDL-1007 : elaborate module PH1_LOGIC_ODDR in D:/UserApp/TD_6.0.2/arch/ph1_macro.v(10705)
+HDL-1007 : elaborate module eth(BOARD_IP=32'b11000000101010000000000100001010,DES_IP=32'b11000000101010000000000101100110) in ../../../eth_src/eth.v(1)
+HDL-1007 : elaborate module ILA2 in ../../al_ip/ILA2/ILA2.sv(1)
+HDL-1007 : port 'behavior_clr' remains unconnected for this instance in ../../al_ip/ILA2/ChipWatcher_aa8a906c90d0.sv(47)
+HDL-1007 : elaborate module ChipWatcher_aa8a906c90d0 in ../../al_ip/ILA2/ChipWatcher_aa8a906c90d0.sv(2)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module ** in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : extracting RAM for identifier '**' in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-5007 WARNING: actual bit length ** differs from formal bit length *** for port '**' in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0)
+HDL-1007 : elaborate module AL_LOGIC_DEBUGHUB(CTRL_LEN=50,STAT_LEN=24) in D:/UserApp/TD_6.0.2/arch/al_lmacro.v(380)
+HDL-1007 : elaborate module eth_ctrl in ../../../eth_src/eth_ctrl.v(1)
+HDL-1007 : elaborate module eth_rx(BOARD_IP=32'b11000000101010000000000100001010) in ../../../eth_src/eth_rx.v(2)
+HDL-1007 : elaborate module crc32_d8 in ../../../eth_src/crc32_d8.v(1)
+HDL-1007 : elaborate module eth_tx(BOARD_IP=32'b11000000101010000000000100001010,DES_IP=32'b11000000101010000000000101100110) in ../../../eth_src/eth.tx.v(3)
+HDL-1007 : port 'doa' remains unconnected for this instance in ../../al_ip/SOFT_FIFO/Comp_inst.v(316)
+HDL-1007 : port 'dib' remains unconnected for this instance in ../../al_ip/SOFT_FIFO/Comp_inst.v(316)
+HDL-1007 : elaborate module Icmp_fifo in ../../al_ip/SOFT_FIFO/Comp_inst.v(13)
+HDL-1007 : elaborate module ram_infer_Icmp_fifo(DATAWIDTH_A=8,ADDRWIDTH_A=10,DATAWIDTH_B=8,ADDRWIDTH_B=10) in ../../al_ip/SOFT_FIFO/Comp_inst.v(347)
+HDL-1007 : extracting RAM for identifier 'memory' in ../../al_ip/SOFT_FIFO/Comp_inst.v(412)
+HDL-5007 WARNING: actual bit length 32 differs from formal bit length 1 for port 'cea' in ../../al_ip/SOFT_FIFO/Comp_inst.v(325)
+HDL-5007 WARNING: actual bit length 32 differs from formal bit length 1 for port 'ocea' in ../../al_ip/SOFT_FIFO/Comp_inst.v(327)
+HDL-5007 WARNING: actual bit length 32 differs from formal bit length 1 for port 'web' in ../../al_ip/SOFT_FIFO/Comp_inst.v(333)
+HDL-5007 WARNING: input port 'dib[7]' is not connected on this instance in ../../al_ip/SOFT_FIFO/Comp_inst.v(323)
+HDL-5007 WARNING: net 'udp_tx_en' does not have a driver in ../../../eth_src/eth_top.v(60)
+HDL-5007 WARNING: net 'udp_tx_data[7]' does not have a driver in ../../../eth_src/eth_top.v(61)
+HDL-5007 WARNING: net 'udp_tx_data_num[15]' does not have a driver in ../../../eth_src/eth_top.v(62)
+HDL-1200 : Current top model is eth_top
+HDL-5106 WARNING: Improper initial value, net "ctrl_state_n[2]" initial value we do not reserve in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0) 
+HDL-5106 WARNING: Improper initial value, net "ctrl_state_n[1]" initial value we do not reserve in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0) 
+HDL-5106 WARNING: Improper initial value, net "ctrl_state_n[0]" initial value we do not reserve in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0) 
+HDL-1100 : Inferred 2 RAMs.
+RUN-1002 : start command "read_adc ../../pin/pins.adc"
+RUN-1002 : start command "set_pin_assignment  rst_n        LOCATION = K4; IOSTANDARD = SSTL15; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  rgmii_rxc      LOCATION = H20; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  rgmii_rx_ctl   LOCATION = K17; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  rgmii_rxd[0]   LOCATION = E21; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  rgmii_rxd[1]   LOCATION = E22; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  rgmii_rxd[2]   LOCATION = H22; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  rgmii_rxd[3]   LOCATION = G22; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  rgmii_txc      LOCATION = L19; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  rgmii_tx_ctl   LOCATION = G21; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  rgmii_txd[0]   LOCATION = F21; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  rgmii_txd[1]   LOCATION = J21; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  rgmii_txd[2]   LOCATION = J22; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  rgmii_txd[3]   LOCATION = J20; IOSTANDARD = LVCMOS33; "
+RUN-1001 : Starting of IO setups legality check.
+RUN-1002 : start command "export_db eth_test_elaborate.db"
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported packer
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported ChipWatcher
+RUN-1002 : start command "commit_param -step rtl"
+RUN-1001 : Print Global Property
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 :     Parameters    |   Settings   |  Default Values  |  Note  
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 :    enable_seed    |     off      |       off        |        
+RUN-1001 :    hfn_to_clock   |  1000000000  |    1000000000    |        
+RUN-1001 :      message      |   standard   |     standard     |        
+RUN-1001 :    qor_monitor    |      on      |        on        |        
+RUN-1001 :   speedup_effort  |      0       |        0         |        
+RUN-1001 :    syn_ip_flow    |     off      |       off        |        
+RUN-1001 :       thread      |     auto     |       auto       |        
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 : Print Rtl Property
+RUN-1001 : ------------------------------------------------------------
+RUN-1001 :     Parameters     |  Settings  |  Default Values  |  Note  
+RUN-1001 : ------------------------------------------------------------
+RUN-1001 :    fix_undriven    |     0      |        0         |        
+RUN-1001 :      infer_fsm     |    off     |       off        |        
+RUN-1001 :      infer_rom     |     on     |        on        |        
+RUN-1001 :    infer_shifter   |     on     |        on        |        
+RUN-1001 :   keep_hierarchy   |    auto    |       auto       |        
+RUN-1001 :     merge_equal    |     on     |        on        |        
+RUN-1001 :   min_control_set  |     8      |        8         |        
+RUN-1001 :   min_ripple_len   |    auto    |       auto       |        
+RUN-1001 :       seq_syn      |     on     |        on        |        
+RUN-1001 : ------------------------------------------------------------
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file D:/UserApp/TD_6.0.2/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "eth_top"
+SYN-1012 : SanityCheck: Model "eth(BOARD_IP=32'b11000000101010000000000100001010,DES_IP=32'b11000000101010000000000101100110)"
+SYN-1012 : SanityCheck: Model "ILA2"
+SYN-1012 : SanityCheck: Model "ChipWatcher_aa8a906c90d0"
+SYN-1012 : SanityCheck: Model "top_cwc_hub(CWC_BUS_NUM=2,CWC_BUS_DIN_NUM=3,CWC_BUS_WIDTH='{1,2},CWC_BUS_DIN_POS='{0,1},CWC_BUS_CTRL_POS='{0,6},RAM_DATA_DEPTH=4096,RAM_LEN=3)"
+SYN-1012 : SanityCheck: Model "anlogic01_cwc(BUS_NUM=2,BUS_DIN_NUM=3,BUS_CTRL_LEN=14,BUS_WIDTH='{1,2},BUS_DIN_POS='{0,1},BUS_CTRL_POS='{0,6})"
+SYN-1012 : SanityCheck: Model "anlogic02_cwc_bus_top(BUS_NODE_NUM=2,BUS_DIN_NUM=3,BUS_CTRL_LEN=14,BUS_WIDTH='{1,2},BUS_DIN_POS='{0,1},BUS_CTRL_POS='{0,6})"
+SYN-1012 : SanityCheck: Model "anlogic03_cwc_bus_det(BUS_WIDTH=32'sb01)"
+SYN-1012 : SanityCheck: Model "anlogic03_cwc_bus_det(BUS_WIDTH=32'sb010)"
+SYN-1012 : SanityCheck: Model "anlogic04_cwc_emb_ctrl"
+SYN-1012 : SanityCheck: Model "anlogic05_cwc_ram(DATA_WIDTH=3,DATA_DEPTH=4096)"
+SYN-1012 : SanityCheck: Model "anlogic06_pipe(BUS_WIDTH=50,PIPE_NUM=0)"
+SYN-1012 : SanityCheck: Model "anlogic06_pipe(BUS_WIDTH=3,PIPE_NUM=0)"
+SYN-1012 : SanityCheck: Model "anlogic06_pipe(BUS_WIDTH=24,PIPE_NUM=0)"
+SYN-1012 : SanityCheck: Model "anlogic06_pipe(PIPE_NUM=0)"
+SYN-1012 : SanityCheck: Model "anlogic06_pipe(BUS_WIDTH=16,PIPE_NUM=0)"
+SYN-1012 : SanityCheck: Model "anlogic06_pipe(BUS_WIDTH=3,PIPE_NUM=5)"
+SYN-1012 : SanityCheck: Model "crc32_d8"
+SYN-1012 : SanityCheck: Model "eth_ctrl"
+SYN-1012 : SanityCheck: Model "eth_rx(BOARD_IP=32'b11000000101010000000000100001010)"
+SYN-1012 : SanityCheck: Model "eth_tx(BOARD_IP=32'b11000000101010000000000100001010,DES_IP=32'b11000000101010000000000101100110)"
+SYN-1012 : SanityCheck: Model "Icmp_fifo"
+SYN-1012 : SanityCheck: Model "ram_infer_Icmp_fifo(DATAWIDTH_A=8,ADDRWIDTH_A=10,DATAWIDTH_B=8,ADDRWIDTH_B=10)"
+SYN-1012 : SanityCheck: Model "rgmii_to_gmii"
+SYN-1012 : SanityCheck: Model "rgmii_rx"
+SYN-1012 : SanityCheck: Model "rx_pll"
+SYN-1012 : SanityCheck: Model "rgmii_tx"
+SYN-1043 : Mark rgmii_tx as IO macro for instance TXDATA_BUS[0]$u_PH1_LOGIC_ODDR
+SYN-1043 : Mark rx_pll as IO macro for instance bufg_feedback
+SYN-1043 : Mark rgmii_rx as IO macro for instance RXDATA_BUS[0]$u_PH1_LOGIC_IDDR
+SYN-1043 : Mark rgmii_to_gmii as IO macro for instance u_rgmii_rx
+SYN-1043 : Mark ChipWatcher_aa8a906c90d0 as IO macro for instance wrapper_debughub
+SYN-1043 : Mark ILA2 as IO macro for instance ChipWatcher_aa8a906c90d0_Inst
+SYN-1043 : Mark eth(BOARD_IP=32'b11000000101010000000000100001010,DES_IP=32'b11000000101010000000000101100110) as IO macro for instance U_ILA2
+SYN-1011 : Flatten model eth_top
+SYN-1050 : Instances selected by 'keep_hierarchy':
+RUN-1001 : ------------------------------------------------------------------------------------------------------------
+RUN-1001 :           instance           |  keep_hierarchy  |         down_module         |         file(line)          
+RUN-1001 : ------------------------------------------------------------------------------------------------------------
+RUN-1001 :  u_eth/U_ILA2/ChipWatche...  |       true       | anlogic05_cwc_ram(DATA_...  | D:/UserApp/TD_6.0.2/ip/...  
+RUN-1001 : ------------------------------------------------------------------------------------------------------------
+SYN-5013 WARNING: Undriven net: model "eth_top" / net "u_eth/u_eth_ctrl/udp_tx_en" in ../../../eth_src/eth_ctrl.v(32)
+SYN-5014 WARNING: the net's pin: pin "sel" in ../../../eth_src/eth_ctrl.v(65)
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1032 : 10018/1358 useful/useless nets, 1688/115 useful/useless insts
+SYN-1021 : Optimized 11 onehot mux instances.
+SYN-1021 : Optimized 13 onehot mux instances.
+SYN-1021 : Optimized 7 onehot mux instances.
+SYN-1016 : Merged 440 instances.
+SYN-1032 : 9051/1495 useful/useless nets, 1616/314 useful/useless insts
+SYN-1016 : Merged 7597 instances.
+SYN-1019 : Optimized 3560 mux instances.
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model eth_top.
+TMR-2506 : Timing graph: tpin num: 22327, tnet num: 8402, tinst num: 3992, tnode num: 27096, tedge num: 53170.
+TMR-2508 : Levelizing timing graph completed, there are 37 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1002 : start command "update_timing -mode BASIC"
+RUN-1002 : start command "start_timer"
+TMR-2505 : Start building timing graph for model eth_top.
+TMR-2506 : Timing graph: tpin num: 22327, tnet num: 8402, tinst num: 3992, tnode num: 27096, tedge num: 53170.
+TMR-2508 : Levelizing timing graph completed, there are 37 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2504 : Update delay of 8402 nets completely.
+TMR-2502 : Annotated delay with mode Synthesized.
+TMR-3002 : No user constraint, initiate default constraint.
+TMR-1501 : Assign derive clock DeriveClock to 1353 clock pins, and constraint 4769 relative nodes.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-1014 : Optimize round 1
+SYN-1044 : Optimized 3 inv instances.
+SYN-1032 : 4583/3533 useful/useless nets, 3655/49 useful/useless insts
+SYN-1017 : Remove 6 const input seq instances
+SYN-1002 :     u_eth/u_eth_rx/ip_head_byte_num_reg_syn_1
+SYN-1002 :     u_eth/u_eth_tx/arp_data_reg_syn_1
+SYN-1002 :     u_eth/u_eth_tx/ip_head_reg_syn_33
+SYN-1002 :     u_eth/u_eth_tx/ip_head_reg_syn_47
+SYN-1002 :     u_eth/u_eth_tx/ip_head_reg_syn_82
+SYN-1002 :     u_eth/u_eth_tx/ip_head_reg_syn_101
+SYN-1019 : Optimized 27 mux instances.
+SYN-1020 : Optimized 75 distributor mux.
+SYN-1001 : Optimize 13 less-than instances
+SYN-1032 : 4666/29 useful/useless nets, 3738/75 useful/useless insts
+SYN-1016 : Merged 155 instances.
+SYN-1015 : Optimize round 1, 1538 better
+SYN-1014 : Optimize round 2
+SYN-1044 : Optimized 10 inv instances.
+SYN-1032 : 4489/10 useful/useless nets, 3561/2 useful/useless insts
+SYN-1017 : Remove 1 const input seq instances
+SYN-1002 :     u_eth/u_eth_tx/iudp_head_reg_syn_17
+SYN-1019 : Optimized 1 mux instances.
+SYN-1032 : 4486/1 useful/useless nets, 3558/0 useful/useless insts
+SYN-1016 : Merged 1 instances.
+SYN-1015 : Optimize round 2, 78 better
+SYN-5011 WARNING: Undriven pin: model "eth_top" / inst "u_eth/U_ILA2/ChipWatcher_aa8a906c90d0_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_dup_5" in D:/UserApp/TD_6.0.2/ip/apm/apm_cwc/apm_cwc.sv(0) / pin "re1"
+SYN-5011 WARNING: Undriven pin: model "eth_top" / inst "u_eth/u_icmp_fifo/ram_inst/ramread0_dup_5" in ../../al_ip/SOFT_FIFO/Comp_inst.v(836) / pin "re1"
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-1032 : 4485/1 useful/useless nets, 3557/1 useful/useless insts
+SYN-1032 : 4483/2 useful/useless nets, 3555/1 useful/useless insts
+SYN-3010 : Optimized 1 DFF(s)
+SYN-1032 : 4416/74 useful/useless nets, 3530/32 useful/useless insts
+SYN-1014 : Optimize round 1
+SYN-1016 : Merged 3 instances.
+SYN-1015 : Optimize round 1, 6 better
+SYN-1014 : Optimize round 2
+SYN-1015 : Optimize round 2, 0 better
+RUN-1003 : finish command "optimize_rtl" in  4.306167s wall, 1.015625s user + 0.093750s system = 1.109375s CPU (25.8%)
+
+RUN-1004 : used memory is 1428 MB, reserved memory is 1460 MB, peak memory is 1428 MB
+RUN-1002 : start command "report_area -file eth_test_rtl.area"
+RUN-1001 : standard
+***Report Model: eth_top Device: PH1A90SBG484***
+
+IO Statistics
+#IO                        13
+  #input                    7
+  #output                   6
+  #inout                    0
+
+Gate Statistics
+#Basic gates             2457
+  #and                    161
+  #nand                     0
+  #or                     174
+  #nor                      0
+  #xor                    431
+  #xnor                     0
+  #buf                      0
+  #not                    266
+  #bufif1                   0
+  #MX21                    90
+  #FADD                     0
+  #DFF                   1335
+  #LATCH                    0
+#MACRO_ADD                 69
+#MACRO_EQ                  76
+#MACRO_MUX                833
+#MACRO_OTHERS              11
+
+Report Hierarchy Area:
++--------------------------------------------------------------------------------------------------+
+|Instance                                        |Module                   |gates  |seq    |macros |
++--------------------------------------------------------------------------------------------------+
+|top                                             |eth_top                  |1122   |1335   |156    |
+|  u_eth                                         |eth                      |1115   |1335   |145    |
+|    U_ILA2                                      |ILA2                     |56     |220    |22     |
+|      ChipWatcher_aa8a906c90d0_Inst             |ChipWatcher_aa8a906c90d0 |56     |220    |22     |
+|        wrapper_cwc_top                         |top_cwc_hub              |56     |220    |22     |
+|          U_cwc                                 |anlogic01_cwc            |54     |198    |20     |
+|            U_cwc_bus_top                       |anlogic02_cwc_bus_top    |41     |6      |4      |
+|              CWC_BUS_DETECTOR[0]$U_cwc_....    |anlogic03_cwc_bus_det    |17     |2      |0      |
+|              CWC_BUS_DETECTOR[1]$U_cwc_....    |anlogic03_cwc_bus_det    |24     |4      |4      |
+|            U_emb_ctrl                          |anlogic04_cwc_emb_ctrl   |7      |51     |5      |
+|          U_cwc_ram                             |anlogic05_cwc_ram        |1      |3      |0      |
+|          pipe_watch                            |anlogic06_pipe           |0      |15     |0      |
+|    u_crc32_d8_rx                               |crc32_d8                 |247    |32     |0      |
+|    u_crc32_d8_tx                               |crc32_d8                 |247    |32     |0      |
+|    u_eth_ctrl                                  |eth_ctrl                 |20     |72     |7      |
+|    u_eth_rx                                    |eth_rx                   |122    |532    |45     |
+|    u_eth_tx                                    |eth_tx                   |408    |374    |62     |
+|    u_icmp_fifo                                 |Icmp_fifo                |14     |73     |9      |
+|      ram_inst                                  |ram_infer_Icmp_fifo      |0      |8      |0      |
+|  u_rgmii_to_gmii                               |rgmii_to_gmii            |2      |0      |11     |
+|    u_rgmii_rx                                  |rgmii_rx                 |2      |0      |6      |
+|      u_rx_pll                                  |rx_pll                   |0      |0      |1      |
+|    u_rgmii_tx                                  |rgmii_tx                 |0      |0      |5      |
++--------------------------------------------------------------------------------------------------+
+
+RUN-1002 : start command "export_db eth_test_rtl.db"
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported packer
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported ChipWatcher
+RUN-1002 : start command "commit_param -step gate"
+RUN-1001 : Print Global Property
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 :     Parameters    |   Settings   |  Default Values  |  Note  
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 :    enable_seed    |     off      |       off        |        
+RUN-1001 :    hfn_to_clock   |  1000000000  |    1000000000    |        
+RUN-1001 :      message      |   standard   |     standard     |        
+RUN-1001 :    qor_monitor    |      on      |        on        |        
+RUN-1001 :   speedup_effort  |      0       |        0         |        
+RUN-1001 :    syn_ip_flow    |     off      |       off        |        
+RUN-1001 :       thread      |     auto     |       auto       |        
+RUN-1001 : -------------------------------------------------------------
+RUN-1001 : Print Gate Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   eram_cascade_height  |    auto    |       auto       |        
+RUN-1001 :        map_mode        |    auto    |       auto       |        
+RUN-1001 :      map_strategy      |     1      |        1         |        
+RUN-1001 :       pack_effort      |   medium   |      medium      |        
+RUN-1001 :     pack_seq_in_io     |    auto    |       auto       |        
+RUN-1001 :         report         |  standard  |     standard     |        
+RUN-1001 : ----------------------------------------------------------------
+RUN-1002 : start command "read_sdc ../../pin/time.sdc"
+RUN-1002 : start command "get_ports rgmii_rxc"
+RUN-1002 : start command "create_clock -name rgmii_rx_clk -period 8 -waveform 0 4 "
+RUN-1102 : create_clock: clock name: rgmii_rx_clk, type: 0, period: 8000, rise: 0, fall: 4000.
+RUN-1002 : start command "derive_pll_clocks"
+USR-1002 : Gen clock cmd:  create_generated_clock -name {u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc[0]} -source [get_ports {rgmii_rxc}] -master_clock {rgmii_rx_clk} -divide_by 1.2500 -duty_cycle 50.0000 [get_pins {u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc[0]}]
+RUN-1002 : start command "get_ports rgmii_rxc"
+RUN-1002 : start command "get_pins u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc[0]"
+RUN-1002 : start command "create_generated_clock -name u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc[0] -source  -master_clock rgmii_rx_clk -divide_by 1.2500 -duty_cycle 50.0000 "
+USR-1002 : Gen clock cmd:  create_generated_clock -name {u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc[1]} -source [get_ports {rgmii_rxc}] -master_clock {rgmii_rx_clk} -multiply_by 1.0000 -phase 270 -duty_cycle 50.0000 [get_pins {u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc[1]}]
+RUN-1002 : start command "get_ports rgmii_rxc"
+RUN-1002 : start command "get_pins u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc[1]"
+RUN-1002 : start command "create_generated_clock -name u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc[1] -source  -master_clock rgmii_rx_clk -multiply_by 1.0000 -phase 270 -duty_cycle 50.0000 "
+RUN-1002 : start command "optimize_gate -maparea eth_test_gate.area"
+RUN-1001 : Open license file D:/UserApp/TD_6.0.2/license/Anlogic.lic
+SYN-6019 WARNING: None clock-capable pad connect with clk net rgmii_rxc, will suffer from clock performance degradation.
+SYN-2001 : Map 13 IOs to PADs
+SYN-1032 : 4415/10 useful/useless nets, 3529/10 useful/useless insts
+RUN-1002 : start command "update_pll_param -module eth_top"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2598 : Infer ram : u_eth/U_ILA2/ChipWatcher_aa8a906c90d0_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_dup_9 to Bram: u_eth/U_ILA2/ChipWatcher_aa8a906c90d0_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_syn_10; 
+SYN-2598 : Infer ram : u_eth/u_icmp_fifo/ram_inst/ramread0_dup_9 to Bram: u_eth/u_icmp_fifo/ram_inst/ramread0_syn_10; 
+SYN-1032 : 4418/824 useful/useless nets, 3522/11 useful/useless insts
+SYN-2512 : LOGIC BRAM "u_eth/U_ILA2/ChipWatcher_aa8a906c90d0_Inst/wrapper_cwc_top/U_cwc_ram/ramread0_syn_11"
+SYN-2512 : LOGIC BRAM "u_eth/u_icmp_fifo/ram_inst/ramread0_syn_10"
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-1032 : 4404/824 useful/useless nets, 3519/0 useful/useless insts
+SYN-1001 : Throwback 31 control mux instances
+SYN-1001 : clone 1 adder instances)
+SYN-1001 : Generate 2 bigger adders
+RUN-1002 : start command "start_timer -prepack"
+USR-1006 : Autogen constraints ...
+SYN-1001 : Optimize 26 adders
+SYN-1001 : Optimize 4 less-than instances
+SYN-2501 : Optimize round 1
+SYN-1032 : 5439/44 useful/useless nets, 4589/4 useful/useless insts
+SYN-1016 : Merged 307 instances.
+SYN-2501 : Optimize round 1, 1205 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-1032 : 5121/20 useful/useless nets, 4271/20 useful/useless insts
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 2 instances.
+SYN-2501 : Optimize round 1, 2 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+USR-1006 : Autogen constraints ...
+SYN-1030 : Map 17 macro adder
+SYN-1031 : Map 4 macro less-than
+SYN-2501 : Map 43 macro adder(s)
+SYN-3001 : Mapper mapped 32 instances into 19 LUTs, name keeping = 5%.
+SYN-3001 : Mapper mapped 32 instances into 19 LUTs, name keeping = 5%.
+SYN-3001 : Mapper mapped 32 instances into 19 LUTs, name keeping = 5%.
+SYN-3001 : Mapper mapped 30 instances into 5 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 32 instances into 5 LUTs, name keeping = 20%.
+SYN-3001 : Mapper mapped 30 instances into 5 LUTs, name keeping = 40%.
+SYN-3001 : Mapper mapped 32 instances into 19 LUTs, name keeping = 5%.
+SYN-3001 : Mapper mapped 30 instances into 5 LUTs, name keeping = 40%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 31 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-3001 : Mapper mapped 7 instances into 1 LUTs, name keeping = 100%.
+SYN-2501 : Inferred 3 ROM instances
+SYN-1019 : Optimized 347 mux instances.
+SYN-1016 : Merged 514 instances.
+SYN-1032 : 6810/422 useful/useless nets, 5961/1 useful/useless insts
+RUN-1002 : start command "start_timer -prepack"
+USR-1006 : Autogen constraints ...
+TMR-2505 : Start building timing graph for model eth_top.
+TMR-2506 : Timing graph: tpin num: 22084, tnet num: 6808, tinst num: 5959, tnode num: 26793, tedge num: 32069.
+TMR-2508 : Levelizing timing graph completed, there are 77 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2504 : Update delay of 6808 nets completely.
+TMR-2502 : Annotated delay with mode Synthesized.
+TMR-3001 : Initiate 3 clocks from SDC.
+TMR-3004 : Map sdc constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Collect 1690 PI 497 PO (1 timing unconstrained) for mapping
+SYN-2581 : Mapping with K=6, #lut = 1197 (4.31), #lev = 6 (3.06), #crit_level = 0
+SYN-2551 : Post LUT mapping optimization.
+SYN-2581 : Mapping with K=6, #lut = 1127 (4.53), #lev = 6 (2.77), #crit_level = 0
+SYN-3001 : Logic optimization opt = 0.21 sec, map = 0.11 sec, post map opt = 0.59 sec.
+SYN-3001 : Mapper mapped 3630 instances into 1140 LUTs, name keeping = 60%.
+SYN-3001 : Mapper removed 1 lut buffers
+RUN-1002 : start command "start_timer -prepack"
+USR-1006 : Autogen constraints ...
+TMR-2505 : Start building timing graph for model eth_top.
+TMR-2506 : Timing graph: tpin num: 16404, tnet num: 4266, tinst num: 3468, tnode num: 21113, tedge num: 25688.
+TMR-2508 : Levelizing timing graph completed, there are 73 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2504 : Update delay of 4266 nets completely.
+TMR-2502 : Annotated delay with mode Synthesized.
+TMR-3001 : Initiate 3 clocks from SDC.
+TMR-3004 : Map sdc constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+RUN-1002 : start command "end_timer"
+RUN-1002 : start command "start_timer -prepack"
+USR-1006 : Autogen constraints ...
+TMR-2505 : Start building timing graph for model eth_top.
+TMR-2506 : Timing graph: tpin num: 16404, tnet num: 4266, tinst num: 3468, tnode num: 21113, tedge num: 25688.
+TMR-2508 : Levelizing timing graph completed, there are 73 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2504 : Update delay of 4266 nets completely.
+TMR-2502 : Annotated delay with mode Synthesized.
+TMR-3001 : Initiate 3 clocks from SDC.
+TMR-3004 : Map sdc constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+RUN-1002 : start command "report_area -file eth_test_gate.area"
+RUN-1001 : standard
+***Report Model: eth_top Device: PH1A90SBG484***
+
+IO Statistics
+#IO                        13
+  #input                    7
+  #output                   6
+  #inout                    0
+
+Utilization Statistics
+#lut                     2051
+  #lut1                    12
+  #lut2                   173
+  #lut3                   198
+  #lut4                   150
+  #lut5                   180
+  #lut6                   464
+  #1-bit adder            874
+#reg                     1324   out of 128640    1.03%
+  #dff                   1324
+  #latch                    0
+#f7mux                      0   out of  32160    0.00%
+#f8mux                      0   out of  16080    0.00%
+#dsp                        0   out of    240    0.00%
+#eram                       2   out of    272    0.74%
+  #eram20k                  2
+  #fifo20k                  0
+#pad                       13   out of    260    5.00%
+  #ireg                     0
+  #oreg                     5
+  #treg                     0
+#pll                        1   out of     12    8.33%
+#pcie                       0   out of      1    0.00%
+#serdes dual                0   out of      2    0.00%
+#ddr_cal                    0   out of      1    0.00%
+#ddr_bank                   0   out of      2    0.00%
+
+Report Hierarchy Area:
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Instance                                        |Module                   |logic lut |ripple  |seq     |eram    |dsp     |dram     |shifter |f7mux   |f8mux   |pll     |serdes   |pcie    |ddr     |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|top                                             |eth_top                  |1177      |874     |1329    |2       |0       |0        |0       |0       |0       |1       |0        |0       |0       |
+|  u_eth                                         |eth                      |1176      |824     |1324    |2       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    U_ILA2                                      |ILA2                     |142       |101     |217     |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|      ChipWatcher_aa8a906c90d0_Inst             |ChipWatcher_aa8a906c90d0 |142       |101     |217     |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|        wrapper_cwc_top                         |top_cwc_hub              |142       |101     |217     |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|          U_cwc                                 |anlogic01_cwc            |137       |101     |198     |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|            U_cwc_bus_top                       |anlogic02_cwc_bus_top    |0         |0       |6       |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|              CWC_BUS_DETECTOR[0]$U_cwc_....    |anlogic03_cwc_bus_det    |0         |0       |2       |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|              CWC_BUS_DETECTOR[1]$U_cwc_....    |anlogic03_cwc_bus_det    |0         |0       |4       |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|            U_emb_ctrl                          |anlogic04_cwc_emb_ctrl   |61        |34      |51      |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|          U_cwc_ram                             |anlogic05_cwc_ram        |1         |0       |0       |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|          pipe_watch                            |anlogic06_pipe           |0         |0       |15      |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_crc32_d8_rx                               |crc32_d8                 |41        |0       |32      |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_crc32_d8_tx                               |crc32_d8                 |41        |0       |32      |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_eth_ctrl                                  |eth_ctrl                 |16        |0       |72      |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_eth_rx                                    |eth_rx                   |204       |130     |532     |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_eth_tx                                    |eth_tx                   |660       |593     |374     |0       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|    u_icmp_fifo                                 |Icmp_fifo                |72        |0       |65      |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|      ram_inst                                  |ram_infer_Icmp_fifo      |0         |0       |0       |1       |0       |0        |0       |0       |0       |0       |0        |0       |0       |
+|  u_rgmii_to_gmii                               |rgmii_to_gmii            |0         |0       |0       |0       |0       |0        |0       |0       |0       |1       |0        |0       |0       |
+|    u_rgmii_rx                                  |rgmii_rx                 |0         |0       |0       |0       |0       |0        |0       |0       |0       |1       |0        |0       |0       |
+|      u_rx_pll                                  |rx_pll                   |0         |0       |0       |0       |0       |0        |0       |0       |0       |1       |0        |0       |0       |
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+SYN-1001 : Packing model "eth_top" ...
+SYN-4010 : Pack lib has 85 rtl pack models with 58 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 1324 DFF/LATCH to SEQ ...
+SYN-1001 : Remove 44 carry adders
+SYN-4009 : Pack 42 carry chain into lslice
+SYN-4012 : Packed 0 FxMUX
+RUN-1002 : start command "report_qor -step gate -file gate.qor"
+RUN-1002 : start command "start_timer"
+USR-1006 : Autogen constraints ...
+TMR-2505 : Start building timing graph for model eth_top.
+TMR-2506 : Timing graph: tpin num: 17890, tnet num: 5019, tinst num: 3424, tnode num: 22830, tedge num: 28400.
+TMR-2508 : Levelizing timing graph completed, there are 73 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+-----------------------------------------------------------
+| QoR metrics               |         value               |
+-----------------------------------------------------------
+| Timing                    |                             |
+|     Setup WNS             |         1329                |
+|     Setup TNS             |            0                |
+|     Num of violated S-EP  |            0                |
+|     Hold WNS              |          475                |
+|     Hold TNS              |            0                |
+|     Num of violated H-EP  |            0                |
+-----------------------------------------------------------
+| Utilization               |                             |
+|     #registers            |         1324                |
+|     #luts                 |         1177                |
+|     #lut1                 |           12                |
+|     #lut1(~A)             |           12                |
+|     #slices               |          830                |
+|     slices percentage     |        1.29%                |
+|     #RAMs                 |            2                |
+|     #DSPs                 |            0                |
+|     #f7mux                |        0.00%                |
+|     #MACROs               |           42                |
+|     #insts in MACRO       |          830                |
+-----------------------------------------------------------
+| Top 10% datanet fanout#   |        31.06                |
+-----------------------------------------------------------
+| Over-quota path num*      |                             |
+|     Total                 |            0                |
+-----------------------------------------------------------
+| Rent**                    |                             |
+-----------------------------------------------------------
+Note*: Over-quota path shows the over-path-level-threshold path number of each clock.
+       The clock will not be shown if no path is with path level over the threshold.
+       The threshold is defined as worst path_margin / 800ps.
+Note**: Rent shows the rent exponent value of the modules whose rent value exceeds the threshold.
+        Only modules under top are reported, and the threshold is defined as 0.7.
+
+Logic Level Distribution
+---------------------------------------------------------------------------------------------------------------------------------------------------
+  Clock                                                 |  Period             |  0     |  1    |  2    |  3    |  4    |  5    |  6    |  7  |  8
+---------------------------------------------------------------------------------------------------------------------------------------------------
+  rgmii_rx_clk                                          |  8.000ns (125MHz)   |  0     |  0    |  0    |  0    |  0    |  0    |  0    |  0  |  0
+  u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc[0]  |  10.000ns (100MHz)  |  0     |  0    |  0    |  0    |  0    |  0    |  0    |  0  |  0
+  u_rgmii_to_gmii/u_rgmii_rx/u_rx_pll/pll_inst.clkc[1]  |  8.000ns (125MHz)   |  1017  |  237  |  289  |  221  |  756  |  167  |  168  |  3  |  9
+  Total                                                 |  NA                 |  1017  |  237  |  289  |  221  |  756  |  167  |  168  |  3  |  9
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Note: The table count the worst 100000 paths, each endpoint count only one time.(2867 paths analyzed)
+
+Hierarchical Rent Exponent Report
++---------------------------------------------------------------------------------------------------+
+|Inst     |Model                                             |Rent     |Cell     |Pin     |Term     |
++---------------------------------------------------------------------------------------------------+
+|top      |eth_top                                           |0.06     |3447     |15012   |7        |
+|  u_eth  |eth(BOARD_IP=32'b11000000101010000000000100001... |0.40     |3383     |14783   |113      |
++---------------------------------------------------------------------------------------------------+
+Note: Cell represents total number of cells inside module; Pin represents total number of pins
+      which have net connection inside module; Term represents total number of PIs and POs of module.
+      Rent represents the relationship between number of terms and number of cells in module.
+      A module with higher rent corresponds to highly connected logic and strong connectivity with others.
+Report gate stage QoR done.
+
+RUN-1003 : finish command "report_qor -step gate -file gate.qor" in  1.136801s wall, 0.312500s user + 0.000000s system = 0.312500s CPU (27.5%)
+
+RUN-1004 : used memory is 1439 MB, reserved memory is 1469 MB, peak memory is 1443 MB
+RUN-1003 : finish command "optimize_gate -maparea eth_test_gate.area" in  6.415345s wall, 2.140625s user + 0.031250s system = 2.171875s CPU (33.9%)
+
+RUN-1004 : used memory is 1439 MB, reserved memory is 1469 MB, peak memory is 1443 MB
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model eth_top
+SYN-1032 : 4977/0 useful/useless nets, 3391/35 useful/useless insts
+RUN-1002 : start command "update_timing"
+RUN-1002 : start command "start_timer"
+USR-1006 : Autogen constraints ...
+TMR-2505 : Start building timing graph for model eth_top.
+TMR-2506 : Timing graph: tpin num: 17788, tnet num: 4957, tinst num: 3371, tnode num: 22728, tedge num: 28298.
+TMR-2508 : Levelizing timing graph completed, there are 73 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2504 : Update delay of 4957 nets completely.
+TMR-2502 : Annotated delay with mode Synthesized.
+TMR-3001 : Initiate 3 clocks from SDC.
+TMR-3004 : Map sdc constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+RUN-1002 : start command "report_timing_status -file eth_test_gate.ts"
+RUN-1002 : start command "export_db eth_test_gate.db"
+RUN-1001 : Exported flow parameters
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported packer
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported ChipWatcher
+RUN-1002 : start command "export_flow_status -s read_design -e opt_gate"
+RUN-1002 : start command "flow_status -file flow.status -append_files gate.qor place.qor route.qor"
+Location         : D:\Desktop\anlogic\verimaker\ETHERENT_NEW\prj\eth_test_Runs\syn_1
+Running with     : Tang Dynasty v6.0.122666
+                   Copyright (c) 2012-2024 Anlogic Inc.
+Top Model        : eth_top
+Device           : PH1A90SBG484
+Speed            : 2
+
+Timing Mode      : basic
+Setup            : WNS  1329ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS   475ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+RUN-1001 : Flow Statistics:
+RUN-1001 : -----------------------------------------------------------------------------------------------------
+RUN-1001 :      command     |  #calls  |  wall time(s)  |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+RUN-1001 : -----------------------------------------------------------------------------------------------------
+RUN-1001 :   import_device  |    1     |     6(37%)     |    1(25%)     |       1329        |       1361        
+RUN-1001 :   optimize_gate  |    1     |     6(37%)     |    2(50%)     |       1439        |       1443        
+RUN-1001 :   optimize_rtl   |    1     |     4(25%)     |    1(25%)     |       1428        |       1428        
+RUN-1001 :     read_adc     |    1     |     0(0%)      |     0(0%)     |       1388        |       1388        
+RUN-1001 :     read_sdc     |    1     |     0(0%)      |     0(0%)     |       1431        |       1438        
+RUN-1001 : -----------------------------------------------------------------------------------------------------
+RUN-1001 :       total      |    5     |       16       |       4       |       1439        |       1443        
+RUN-1001 : -----------------------------------------------------------------------------------------------------

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chip_watcher_data>
+<cwc_data version="1.0">
+    <instance name="U_ILA">
+        <watcher_nodes>
+            <net name="gmii_rx_dv" original_name="gmii_rx_dv" synchronizable="true"/>
+            <bus name="gmii_rxd[7:0]" original_name="gmii_rxd[7:0]" bus_radix="0" synchronizable="true">
+                <net_in_bus name="gmii_rxd[7]" original_name="gmii_rxd[7]" synchronizable="true"/>
+                <net_in_bus name="gmii_rxd[6]" original_name="gmii_rxd[6]" synchronizable="true"/>
+                <net_in_bus name="gmii_rxd[5]" original_name="gmii_rxd[5]" synchronizable="true"/>
+                <net_in_bus name="gmii_rxd[4]" original_name="gmii_rxd[4]" synchronizable="true"/>
+                <net_in_bus name="gmii_rxd[3]" original_name="gmii_rxd[3]" synchronizable="true"/>
+                <net_in_bus name="gmii_rxd[2]" original_name="gmii_rxd[2]" synchronizable="true"/>
+                <net_in_bus name="gmii_rxd[1]" original_name="gmii_rxd[1]" synchronizable="true"/>
+                <net_in_bus name="gmii_rxd[0]" original_name="gmii_rxd[0]" synchronizable="true"/>
+            </bus>
+        </watcher_nodes>
+        <trigger_config>
+            <net name="gmii_rx_dv" original_name="gmii_rx_dv"/>
+        </trigger_config>
+    </instance>
+    <instance name="u_eth/U_ILA2">
+        <watcher_nodes>
+            <bus name="eth_rx_type[1:0]" original_name="eth_rx_type[1:0]" bus_radix="0" synchronizable="true">
+                <net_in_bus name="eth_rx_type[1]" original_name="eth_rx_type[1]" synchronizable="true"/>
+                <net_in_bus name="eth_rx_type[0]" original_name="eth_rx_type[0]" synchronizable="true"/>
+            </bus>
+            <net name="rx_done" original_name="rx_done" synchronizable="true"/>
+        </watcher_nodes>
+        <trigger_config>
+            <net name="rx_done" original_name="rx_done"/>
+        </trigger_config>
+    </instance>
+</cwc_data>
